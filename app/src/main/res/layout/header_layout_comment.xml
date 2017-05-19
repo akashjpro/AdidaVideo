@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.andexert.library.RippleView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#fffffd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#171818"
+                android:textSize="18sp"
+                android:text="Thiên Long Bát Bộ Tập 33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTitle" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtViewVideo"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <RelativeLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.adida.akashjpro.likebutton.LikeButton
+                android:layout_marginLeft="-6dp"
+                app:circle_end_color="@android:color/holo_blue_dark"
+                app:circle_start_color="@android:color/holo_blue_bright"
+                app:dots_primary_color="@android:color/holo_blue_light"
+                app:dots_secondary_color="@android:color/holo_blue_dark"
+                android:id="@+id/likeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon_size="18dp"
+                app:anim_scale_factor="3"
+                app:icon_type="Thumb" />
+
+            <TextView
+                android:layout_marginLeft="42dp"
+                android:id="@+id/txtLike"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.adida.akashjpro.likebutton.LikeButton
+
+                android:layout_centerInParent="true"
+                android:id="@+id/heart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon_size="18dp"
+                app:anim_scale_factor="3"
+                app:icon_type="heart" />
+
+            <com.adida.akashjpro.likebutton.LikeButton
+                app:circle_end_color="@android:color/holo_green_dark"
+                app:circle_start_color="@android:color/holo_green_dark"
+                app:dots_primary_color="@android:color/holo_green_dark"
+                app:dots_secondary_color="@android:color/holo_green_light"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon_size="18dp"
+                app:anim_scale_factor="3"
+                app:icon_type="share" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="#ece9e9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtNamMo"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#b3bf40"
+                android:text="Chúc quý vị xem video vui vẻ!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layoutcomment"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Bình luận:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="#2600ff"
+                        android:id="@+id/tongSoComment"
+                        android:layout_marginLeft="5dp"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:id="@+id/swipeLeft"
+                    android:src="@drawable/swipe_left"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/fingerDrag"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/finger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/layoutcomment"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/profilePicComment"
+                        android:src="@drawable/ic_launcher"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_toLeftOf="@+id/sentCommentButton"
+                            android:id="@+id/contentCommentEdt"
+                            android:hint="Nhập bình luận của bạn..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:textColor="#ffffff"
+                            android:background="@drawable/button_background_facebook"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:id="@+id/sentCommentButton"
+                            android:text="Gửi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</com.andexert.library.RippleView>
+
+

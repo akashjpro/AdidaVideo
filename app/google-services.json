@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "738109422896",
+    "firebase_url": "https://adidavideo-c1515.firebaseio.com",
+    "project_id": "adidavideo-c1515",
+    "storage_bucket": "adidavideo-c1515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738109422896:android:504d37c0a446b87b",
+        "android_client_info": {
+          "package_name": "com.adida.akashjpro.livevideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738109422896-mr1d0d26ron00ncnbae2asfnvq8roj3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adida.akashjpro.livevideo",
+            "certificate_hash": "58ef28f73db140c819524a1d1fde7e0c5574e67d"
+          }
+        },
+        {
+          "client_id": "738109422896-meu3i0aacspnd9o1vmulsg90p1777hu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI-vzJld1SZq1G67puuswhmye1qze-UuQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738109422896-meu3i0aacspnd9o1vmulsg90p1777hu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

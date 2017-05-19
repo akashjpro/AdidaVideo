@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Trang chủ"
+            android:id="@+id/menuTrangChu"
+            android:icon="@drawable/nav_item_icon"/>
+
+        <item android:title="Ca nhạc"
+            android:icon="@drawable/nav_item_icon_music_video"
+            android:id="@+id/menuCaNhac"/>
+
+        <item android:title="Bài giảng"
+            android:icon="@drawable/nav_item_icon_lesson"
+            android:id="@+id/menuBaiGiang"/>
+
+        <item android:title="Phim hay"
+            android:icon="@drawable/nav_item_icon_fim"
+            android:id="@+id/menuPhim"/>
+
+
+        <item android:title="Sách nói"
+            android:icon="@drawable/nav_item_icon_audio_book"
+            android:id="@+id/menuSachNoi"/>
+
+
+        <item android:title="Video yêu thích"
+            android:icon="@drawable/nav_item_icon_video_yeu_thich"
+            android:id="@+id/menuVideoYeuThich"/>
+
+    </group>
+
+    <item android:title="Giới Thiệu" >
+        <menu>
+                <item android:title="Góp ý"
+                    android:id="@+id/menuFeedback"
+                    android:icon="@drawable/message"/>
+
+                <item android:title="Thông tin"
+                    android:id="@+id/menuAbout"
+                    android:icon="@drawable/infor"/>
+        </menu>
+
+    </item>
+
+</menu>

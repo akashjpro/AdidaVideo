@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/loading"
+                android:id="@+id/profilePicComment" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/more_vert"
+                android:layout_toRightOf="@+id/profilePicComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:id="@+id/nameReply"
+                        android:textColor="#3458f2"
+                        android:text="Kaka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="#101010"
+                        android:text="Xin chao cac ban phim hay qua phai khong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/conttenCommnet" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/idUserComment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="Đai thiên"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/nameComment"
+                            android:layout_weight="1" />
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_marginLeft="10dp"
+                        android:text="1 ngaỳ trước"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/timeComment"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/more_vert"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_more_vert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.adida.akashjpro.likebutton.LikeButton
+                app:liked="false"
+                android:id="@+id/btnLikeComment"
+                android:layout_alignParentLeft="true"
+                app:circle_end_color="@android:color/holo_blue_dark"
+                app:circle_start_color="@android:color/holo_blue_bright"
+                app:dots_primary_color="@android:color/holo_blue_light"
+                app:dots_secondary_color="@android:color/holo_blue_dark"
+                app:icon_size="15dp"
+                app:icon_type="Thumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.adida.akashjpro.likebutton.LikeButton>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/totalLikeComment"
+                android:text="99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnLikeComment"
+                android:layout_toEndOf="@+id/btnLikeComment" />
+
+            <ImageButton
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnComment"
+                android:layout_toRightOf="@+id/totalLikeComment"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_reply_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

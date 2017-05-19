@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#063ff9"
+        android:textColor="#ffffff"
+        android:id="@+id/snapTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_horizontal_right"
+        android:layout_marginLeft="@dimen/layout_horizontal_left"
+        android:layout_marginRight="@dimen/layout_horizontal_right"
+        android:layout_marginStart="@dimen/layout_horizontal_left"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            android:padding="4dp" />
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:id="@+id/swipeLeft"
+                android:src="@drawable/swipe_left"
+                android:layout_width="100dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/finferDrag"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/finger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+      android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ece9e9"
+        android:id="@+id/txtBaiKe"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textColor="#ffa200"
+            android:text="Thân như cây bồ đề "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#ffa200"
+            android:text="Tâm như đài gương sáng "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#ffa200"
+            android:text="Thường thường phải lau chùi "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#ffa200"
+            android:text="Chớ để dính bụi nhơ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

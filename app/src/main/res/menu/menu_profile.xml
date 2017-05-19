@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Xem hình" android:id="@+id/viewPic"/>
+    <item android:title="Thay đổi hình mới" android:id="@+id/editNewPic"/>
+    <item android:title="Chụp hình mới" android:id="@+id/cameraNew"/>
+</menu>

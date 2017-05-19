@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adida.akashjpro.livevideo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Cấp quyền để truy xuất bộ nhớ thư mục lưu trữ -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider771248749695310"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
+        <activity
+            android:name="com.adida.akashjpro.activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan">
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.adida.akashjpro.activity.PlayVideo"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2498c2239bd9c671aaa802b474c0871c31765694" />
+
+        <activity
+            android:name="com.adida.akashjpro.activity.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.adida.akashjpro.activity.SignupActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.adida.akashjpro.activity.ProfileActivity" />
+        <activity android:name="com.adida.akashjpro.activity.ProfilePicture" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name="com.adida.akashjpro.activity.CreateProfilePicActivity" />
+        <activity android:name="com.adida.akashjpro.activity.About" />
+        <activity android:name="com.adida.akashjpro.activity.Feedback" />
+        <activity android:name="com.adida.akashjpro.activity.utils.NoInternet"></activity>
+    </application>
+
+</manifest>

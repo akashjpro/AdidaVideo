@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#1900ff"
+        android:gravity="center"
+        android:text="Cập nhật ngày sinh nhật"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <AutoCompleteTextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/autoEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:paddingBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="#ffffff"
+            android:background="@drawable/button_background_facebook"
+            android:text="Cập nhật"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/updateLiveButton" />
+
+        <Button
+            android:id="@+id/exitLiveButton"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_background_google"
+            android:layout_marginLeft="30dp"
+            android:text="Thoát"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

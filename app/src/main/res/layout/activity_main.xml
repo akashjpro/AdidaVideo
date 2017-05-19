@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adida.akashjpro.livevideo.activity.MainActivity">
+
+    <com.andexert.library.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/myDrawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                xmlns:draggable_panel="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/framLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:cacheColorHint="@android:color/transparent"
+                        android:clipToPadding="false"
+                        android:scrollbars="vertical"
+                        android:id="@+id/linearLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </FrameLayout>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolBar"
+                        android:layout_width="match_parent"
+                        android:minHeight="?attr/actionBarSize"
+                        android:layout_height="wrap_content"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+                </FrameLayout>
+
+                <com.adida.akashjpro.draggablepanel.DraggablePanel
+                    android:id="@+id/draggable_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    draggable_panel:x_scale_factor="@dimen/x_scale_factor"
+                    draggable_panel:y_scale_factor="@dimen/y_scale_factor"
+                    draggable_panel:top_fragment_height="@dimen/top_fragment_height"
+                    draggable_panel:top_fragment_margin_right="@dimen/top_fragment_margin"
+                    draggable_panel:top_fragment_margin_bottom="@dimen/top_fragment_margin"
+                    draggable_panel:enable_horizontal_alpha_effect="false"/>
+
+
+
+            </FrameLayout>
+
+
+
+            <android.support.design.widget.NavigationView
+                android:background="#fdfdfd"
+                app:itemBackground="@drawable/nav_item_background"
+                app:itemTextColor="@color/drawer_item"
+                app:itemIconTint="@null"
+                app:menu="@menu/menu_navi"
+                android:layout_gravity="start"
+                android:id="@+id/myNavigationView"
+                app:headerLayout="@layout/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.design.widget.NavigationView>
+
+
+
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </com.andexert.library.RippleView>
+
+
+
+
+
+
+</RelativeLayout>

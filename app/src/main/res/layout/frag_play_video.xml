@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.adida.akashjpro.livevideo.activity.PlayVideo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_above="@+id/video_control"
+            android:id="@+id/youtubePlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/video_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imgbtnPlayPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/ic_pause" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgbtnPlayPause"
+                android:textColor="@android:color/white"
+                android:id="@+id/thoiGianBT"
+                android:text="00:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <SeekBar
+                android:max="1000"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/thoiGianKT"
+                android:layout_toRightOf="@+id/thoiGianBT"
+                android:id="@+id/video_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progress="0" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/fullSreen"
+                android:id="@+id/thoiGianKT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:id="@+id/fullSreen"
+                android:src="@mipmap/ic_full_sreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
